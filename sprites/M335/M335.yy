@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Mid",
-    "path":"folders/Sprites/environment/Mid.yy",
+    "path":"folders/Sprites/Mid.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

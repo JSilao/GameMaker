@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"environment",
-    "path":"folders/Sprites/environment.yy",
+    "name":"Dark",
+    "path":"folders/Sprites/environment/Dark.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

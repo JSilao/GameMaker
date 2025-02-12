@@ -7,7 +7,7 @@ function playerState_FREE(){
 
     // 🚀 **Faster Movement Speed**  
     runType = runKey;
-    xspd = moveDir * moveSpd[runType] * 1.5;  // 1.5x speed boost  
+    xspd = moveDir * moveSpd[runType];  
 
     //X collision
     var _subPixel = .5;
@@ -29,14 +29,14 @@ function playerState_FREE(){
     } else {
         // ⚡ **Much Faster Falling**  
         if yspd < 0 {  
-            yspd += grav * 0.7;  // Lighter gravity while going up  
+            yspd += grav;  // Lighter gravity while going up  
         } else {  
-            yspd += grav * 3.5;  // 🔥 Even heavier gravity while falling  
+            yspd += grav;  // 🔥 Even heavier gravity while falling  
         }
 
         // 🏀 **Sharp Drop if Jump Released Early**
         if !jumpKey && yspd < 0 {
-            yspd += grav * 2.5;  // Fall even faster if jump is cut early  
+            yspd += grav;  // Fall even faster if jump is cut early  
         }
         
         setOnGround(false);
@@ -72,7 +72,7 @@ function playerState_FREE(){
     //Jump based on the timer/holding the button
     if jumpHoldTimer > 0
     {
-        yspd = jspd[jumpCount-1] * 2.2;  // 🚀 STRONGER Initial Jump Force  
+        yspd = jspd[jumpCount-1];  // 🚀 STRONGER Initial Jump Force  
         jumpHoldTimer--;
     }
     

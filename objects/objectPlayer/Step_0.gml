@@ -7,7 +7,7 @@ switch (state)
 }
 
 	//Wall jump
-	if (!onGround && (place_meeting(x + 1, y, obj_ground) || place_meeting(x - 1, y, objectWall))) {
+	if (!onGround && (place_meeting(x + 5, y, obj_ground) || place_meeting(x - 5, y, obj_ground))) {
 	   jumpCount = 1;
 	}
 	
